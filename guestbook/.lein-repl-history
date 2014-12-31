@@ -7,3 +7,11 @@
 (read-guests)
 (use 'guestbook.models.db)
 (save-message "John" "Weeeee")
+(use 'hiccup.form)
+(doc hiccup.form/for-to)
+(defn wee [& john] (println john))
+wee 
+wee asd
+(wee)
+(wee john)
+(wee "john")
